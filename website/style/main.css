@@ -1,0 +1,163 @@
+
+
+{grid-column: auto;}
+h2 {color:#3777dd}
+h3 {color:#3777dd}
+
+#columns {
+  display: flex=1;
+  column-count: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  column-span: all;
+}
+ /* Navigation style starts here */
+
+ .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   text-align: center;
+ }
+ .navbar{
+     font-size: 35px;
+     flex: 1;
+   }
+   .nav {
+       top: 0;
+       position: sticky;
+
+   }
+
+   .nav a {
+
+       background-color: White;
+       color: var(--blu);
+       float: left;
+       text-align: center;
+
+       font-weight: 600;
+       font-variant-caps: all-petite-caps;
+
+   }
+
+   .nav a:hover {
+       background-color: var(--blu);
+       color: #d7f7f3;
+       transition: 0.5s;
+   }
+.values{
+  margin:auto;
+}
+.hereWeAre {
+    float: left;
+    margin-bottom: 2em;
+    padding: 5%;
+    transition: 0.25s;
+    width: 100%;
+}
+
+.hereWeAre:hover {
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hereWeAre:nth-child(even) {
+    background-color: var(--blu);
+}
+
+.hereWeAre:nth-child(odd) {
+    background-color: White;
+}
+
+.hereWeAre img {
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 10px 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 10px 10px 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-duration: 90s;
+  animation-name: fade;
+  animation-duration: 90s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 10}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 10}
+  to {opacity: 1}
+}
+iframe{
+  height: 800px;
+  width: 600px;
+}
